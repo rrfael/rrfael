@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1115"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </linearGradient>
+    <style>
+      .ui { font: 600 13px 'Segoe UI', Arial, sans-serif; fill: #e5e7eb; }
+      .tab { font: 600 13px 'Segoe UI', Arial, sans-serif; fill: #f3f4f6; }
+      .term { font: 500 20px Consolas, 'Courier New', monospace; fill: #e5e7eb; }
+      .prompt { fill: #e5e7eb; }
+    </style>
+    <clipPath id="screenClip">
+      <rect x="34" y="52" width="932" height="226" />
+    </clipPath>
+  </defs>
+
+  <rect width="1000" height="300" rx="14" fill="url(#bg)"/>
+
+  <!-- top chrome -->
+  <rect x="0" y="0" width="1000" height="36" fill="#202225"/>
+  <rect x="18" y="10" width="16" height="16" rx="2" fill="#111827" stroke="#5b6472"/>
+  <path d="M22 14h8v8h-8z" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <text x="46" y="23" class="tab">GitHub:\rrfael\cmd.exe</text>
+
+  <!-- actual-style window controls -->
+  <!-- minimize -->
+  <line x1="902" y1="22" x2="914" y2="22" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="square"/>
+  <!-- maximize -->
+  <rect x="933" y="14" width="12" height="10" fill="none" stroke="#e5e7eb" stroke-width="1.5"/>
+  <!-- close -->
+  <line x1="968" y1="14" x2="980" y2="26" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="square"/>
+  <line x1="980" y1="14" x2="968" y2="26" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="square"/>
+
+  <rect x="0" y="36" width="1000" height="264" fill="#0c0c0c"/>
+
+  <g clip-path="url(#screenClip)">
+    <text x="34" y="78" class="term"><tspan class="prompt">GitHub:\rrfael&gt;</tspan> run profile</text>
+
+    <text x="34" y="112" class="term" opacity="0">
+      <set attributeName="opacity" to="1" begin="0.8s" fill="freeze"/>
+      initializing profile...
+    </text>
+
+    <text x="34" y="146" class="term" opacity="0">
+      <set attributeName="opacity" to="1" begin="1.7s" fill="freeze"/>
+      collecting ideas...
+    </text>
+
+    <text x="34" y="180" class="term" opacity="0">
+      <set attributeName="opacity" to="1" begin="2.6s" fill="freeze"/>
+      building something useful...
+    </text>
+
+    <!-- final prompt with only blinking cursor after one space -->
+    <text x="34" y="226" class="term" opacity="0">
+      <set attributeName="opacity" to="1" begin="3.5s" fill="freeze"/>
+      <tspan class="prompt">GitHub:\rrfael&gt;</tspan>
+    </text>
+
+    <rect x="196" y="210" width="11" height="20" fill="#e5e7eb" opacity="0">
+      <set attributeName="opacity" to="1" begin="3.7s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="1.8s" begin="3.7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
