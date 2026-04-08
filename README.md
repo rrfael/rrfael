@@ -1,5 +1,10 @@
-<img src=https://github.com/rrfael/rrfael/blob/main/Capybara_sleep_right.gif>
+<p align="center">
+  <img src=github_capybara_banner.svg/>
+</p>
 
-# Hi! im Ravie Rafael Fetizanan x
+# **Hi, I'm Ravie Rafael Fetizanan.**
 
-<img src=pixel-cat.gif>
+## Tech Stack
+- Python, SQL, PostgreSQL, MySQL, Scrapy, OpenRefine
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
